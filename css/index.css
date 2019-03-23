@@ -130,7 +130,13 @@ h4 {
     text-decoration: none;
 }
 
-#contacts,
-a {
+#contacts, a {
+    color: #ffffff;
+}
+
+input[type="submit"]{
+    background-color: #72bb53;
+    border:1px solid; 
+    border-color: #ffffff;
     color: #ffffff;
 }
