@@ -1,0 +1,15 @@
+html,body{
+    width: 100%;
+    height: 100%;
+   
+}
+
+header, footer, #team{
+    background: #72bb53; 
+}
+
+nav li{
+    list-style: none;
+}
+
+
