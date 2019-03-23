@@ -9,7 +9,7 @@ body {
 
 header,
 footer,
-#team {
+.team {
     background-color: #72bb53;
 
 }
@@ -18,7 +18,7 @@ p {
     margin: 0;
 }
 
-#home label {
+header label {
     font-size: 20px;
     color: #ffffff;
 }
@@ -28,37 +28,40 @@ footer {
     border-top-color: #ffffff
 }
 
-#team {
+.team {
     border-top-style: solid;
     border-top-color: #ffffff;
 }
 
-#team p {
+.team p {
     color: #ffffff;
     font-size: 17px;
 }
 
+.team h2 {
+    color: #ffffff;
+}
 
-#doctors_consultation {
+
+.doctors_consultation {
     border-top-style: solid;
     background-color: #f3edd2;
     border-top-color: #ffffff;
 }
 
-#about-us {
-
+.about-us {
     border-top-color: #ffffff;
     border-top-style: solid;
     background-color: #f3edd2;
 }
 
-#about-us label {
+.about-us label {
     font-size: 23px;
     font-weight: bold;
 
 }
 
-#about-us p {
+.about-us p {
     font-size: 18px;
 
 }
@@ -102,7 +105,7 @@ nav li a {
 
 h5 {
     margin: 3px;
-    font-size: 15px;
+    font-size: 17px;
     color: #ffffff;
 }
 
@@ -112,31 +115,28 @@ h4 {
     color: #ffffff;
 }
 
-#team h2 {
+.contacts h2 {
     color: #ffffff;
 }
 
-#contacts h2 {
-    color: #ffffff;
-}
-
-#contacts label {
+.contacts label {
     font-size: 18px;
 
 }
 
-#contacts a {
+.contacts a {
     font-size: 18px;
     text-decoration: none;
 }
 
-#contacts, a {
+.contacts,
+a {
     color: #ffffff;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     background-color: #72bb53;
-    border:1px solid; 
+    border: 1px solid;
     border-color: #ffffff;
     color: #ffffff;
 }
