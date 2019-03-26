@@ -1,159 +1,109 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*body {
     width: 100%;
     height: 100%;
     
 }
-
 header,
 footer,
 .team {
     background-color: #72bb53;
-
 }
-
 p {
     margin: 0;
 }
-
 header label {
     font-size: 20px;
     color: #ffffff;
 }
-
 footer {
     border-top-style: solid;
     border-top-color: #ffffff
 }
-
 .team {
     border-top-style: solid;
     border-top-color: #ffffff;
 }
-
 .team p {
     color: #ffffff;
     font-size: 17px;
 }
-
 .team h2 {
     color: #ffffff;
 }
-
-
 .doctors_consultation {
     border-top-style: solid;
     background-color: #f3edd2;
     border-top-color: #ffffff;
 }
-
 .about-us {
     border-top-color: #ffffff;
     border-top-style: solid;
     background-color: #f3edd2;
 }
-
 .about-us label {
     font-size: 23px;
     font-weight: bold;
-
 }
-
 .about-us p {
     font-size: 18px;
-
 }
-
 header {
     height: 370px;
     border-bottom-color: #ffffff;
     border-bottom-style: solid;
 }
-
-
 h1 {
     text-align: center;
     color: #ffffff;
     font-size: 50px;
 }
-
 nav {
     overflow: hidden;
     float: right;
 }
-
 nav li {
     list-style: none;
     float: left;
 }
-
 main,
 footer {
     text-align: center;
 }
-
 nav li a {
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     padding: 0 5px;
     color: #ffffff;
-
 }
-
 h5 {
     margin: 3px;
     font-size: 17px;
     color: #ffffff;
 }
-
 h4 {
     margin: 7px;
     font-size: 20px;
     color: #ffffff;
 }
-
 .contacts h2 {
     color: #ffffff;
 }
-
 .contacts label {
     font-size: 18px;
-
 }
-
 .contacts a {
     font-size: 18px;
     text-decoration: none;
 }
-
 .contacts,
 a {
     color: #ffffff;
 }
-
 input[type="submit"] {
     background-color: #72bb53;
     border: 1px solid;
     border-color: #ffffff;
     color: #ffffff;
 }*/
-
