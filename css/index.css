@@ -4,7 +4,7 @@
 body {
     max-width: 980px;
     margin: auto;
-    font-family: "Merriweather";
+    font-family: 'Merriweather';
 
     --main-color: white;
     --secondary-color: black;
@@ -34,6 +34,7 @@ header {
     max-height: 202px;
     border-bottom-color: #ffffff;
     border-bottom-style: solid;
+    
 }
 
 header .upper-icons {
@@ -42,6 +43,10 @@ header .upper-icons {
     align-items: center;
 }
 
+header .upper-icons .main-upper-logo  img{
+    width: 50px; 
+    height: 50px;
+}
 
 header .upper-icons .main-upper-logo {
     display: block;
@@ -59,7 +64,7 @@ header .upper-icons .main-menu-logo {
 
 header nav {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
     margin-left: 20px;
 }
@@ -76,6 +81,7 @@ header nav img {
 header nav label {
     font-size: 15px;
     color: var(--main-color);
+    
 }
 
 header nav .menu {
@@ -84,7 +90,6 @@ header nav .menu {
     margin: 0;
     padding: 0;
     display: none;
-
 }
 
 header .menu li {
@@ -97,8 +102,9 @@ header .menu li {
 header .menu li a {
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 550;
     color: var(--main-color);
-    font-weight: bold;
+    
     font-size: 14px;
     /*display:inline;*/
 }
@@ -184,13 +190,13 @@ header nav .phone-number {
         margin-top: 20px;
     }
     header nav .skype-link {
-        margin-left: 40px;
+        margin-left: 20px;
+        margin-right:10px;
     }
     
     header nav .phone-number {
         margin-right: 40px;
     }
-    
 }
 
 @media (max-width: 320px) {
