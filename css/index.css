@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Arimo');
 
-
 body {
     max-width: 980px;
     margin: auto;
@@ -26,7 +25,6 @@ header h1 {
     text-align: center;
     margin-bottom: 40px;
     color: var(--main-color);
-
 }
 
 header {
@@ -34,7 +32,6 @@ header {
     max-height: 202px;
     border-bottom-color: #ffffff;
     border-bottom-style: solid;
-    
 }
 
 header .upper-icons {
@@ -50,14 +47,12 @@ header .upper-icons .main-upper-logo  img{
 
 header .upper-icons .main-upper-logo {
     display: block;
-    /*text-align: left;*/
     margin-top: 20px;
     margin-left: 20px;
 }
 
 header .upper-icons .main-menu-logo {
     display: block;
-    /*text-align: left;*/
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -77,16 +72,12 @@ header nav img {
     width: 13%;
 }
 
-
 header nav label {
     font-size: 15px;
     color: var(--main-color);
-    
 }
 
 header nav .menu {
-    /*display: flex;
-    justify-content: flex-end;*/
     margin: 0;
     padding: 0;
     display: none;
@@ -104,9 +95,8 @@ header .menu li a {
     text-transform: uppercase;
     font-weight: 550;
     color: var(--main-color);
-    
     font-size: 14px;
-    /*display:inline;*/
+   
 }
 
 header .menu li .contacts {
@@ -125,7 +115,6 @@ header .social-icons-header img {
     width: 100%;
 }
 
-
 header nav .skype-link {
         margin-left: 200px;
     }
@@ -134,9 +123,7 @@ header nav .phone-number {
         margin-right: 200px;
     }
 
-
 @media (min-width: 803px) {
-
     header nav {
         display: flex;
         align-items: center;
@@ -164,7 +151,6 @@ header nav .phone-number {
         margin-right: 22px;
     }
     
-
     header h1 {
         font-size: 40px;
     }
@@ -173,7 +159,6 @@ header nav .phone-number {
         font-size: 16px;
     }
 }
-
 
 @media (max-width: 690px) {
     header nav .skype-link {
@@ -206,5 +191,28 @@ header nav .phone-number {
 
     header nav label {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 340px) {
+    
+    header nav  {
+        margin-left: 10px;
+        justify-content: evenly;
+    }
+    
+    header nav .skype-link {
+        margin-left: 10px;
+        margin-right:10px;
+    }
+    
+    header .upper-icons .main-upper-logo  img{
+    width: 40px; 
+    height: 40px;
+    }
+    
+    header .upper-icons .main-menu-logo img{
+       width: 40px; 
+        height: 40px;
     }
 }
