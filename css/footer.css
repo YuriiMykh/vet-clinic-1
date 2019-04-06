@@ -134,7 +134,7 @@ footer .contacts .contact-info a {
    footer .contacts {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto 0.7fr 0.7fr 1fr auto
+        grid-template-rows: auto 0.7fr 0.7fr 1fr auto;
     }
     
     .contacts .location-map {

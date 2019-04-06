@@ -4,6 +4,8 @@ body {
     max-width: 980px;
     margin: auto;
     font-family: 'Merriweather';
+   margin: 0;
+    padding: 0;
 
     --main-color: white;
     --secondary-color: black;
@@ -15,8 +17,7 @@ h3,
 p,
 div,
 nav {
-    margin: 0;
-    padding: 0;
+    
 }
 
 header h1 {
