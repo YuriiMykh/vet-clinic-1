@@ -247,31 +247,6 @@ hr {
     }
 }
 
-
-/*@media (max-width: 406px) {*/
-
-/*main .doctors-consultation .statement  {*/
-
-/*text-align: center;*/
-
-/* align-self: center;}*/
-
-/*     main .doctors-consultation .statement label {*/
-
-/*margin-left: 0px;*/
-
-/*font-size: 12px;*/
-
-/*}*/
-
-/*    main .doctors-consultation .statement {*/
-
-/*margin-right: 3px;*/
-
-/*}*/
-
-/*}*/
-
 @media (max-width: 331px) {
 
     main .doctors-consultation .statement {

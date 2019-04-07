@@ -1,0 +1,134 @@
+main .team {
+    --main-color: white;
+    --secondary-color: black;
+    background-color: #72bb53;
+    /*max-height:auto;*/
+    border-bottom-color: #ffffff;
+    border-bottom-style: solid;
+    /*margin:0;*/
+}
+
+main .team .head h2 {
+    font-size: 30px;
+    /*text-align: center;*/
+    
+}
+
+main .team .head{
+    /*margin:  10px 10px;  не працює марджин!!!!! включити флекс*/
+    margin:  40px;
+    text-align: center;
+    /*align-content:center;*/
+    /*align-items:center;*/
+    /*justify-content:center;*/
+    /*justify-items:center;*/
+    /*justify-self:center;*/
+    /*align-item:center;*/
+    /*ustify-item:center;*/
+    /*align-self:center;*/
+}
+
+
+main .team  {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+main .team .personel .container-arrows input{
+    display:block;
+}
+
+main .team .personel .container-arrows img{
+    display:block;
+}
+
+main .team .personel{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+    /*justify-content:space-evenly;*/
+    justify-content:space-around;
+    margin-bottom: 30px;
+}
+
+[class^="doctor"]> img {
+ width:75px;
+    height:75px;
+    display:block;
+}
+
+main .team .personel-about-info{
+    width:240px;
+    /*width:19%;*/
+    /*margin:auto;*/
+    
+    align-self:center;
+}
+
+main .team .personel .personel-about-info p {
+   color: var(--main-color);
+   font-size: 14px ;
+   display:inline-block;
+}
+
+main .team .personel .small-pic-personel{
+    display:grid;
+    grid-template-areas:
+    " doctor1 . " 
+    " . doctor2 "
+    " . doctor3 "
+    " doctor4 . ";
+    grid-gap:10px;
+    margin-right: 60px;
+}
+
+main .team .personel .small-pic-personel .doctor1{
+    grid-area: doctor1;
+    /*min-height:130px;*/
+}
+main .team .personel .small-pic-personel .doctor2{
+    grid-area: doctor2;
+    margin-bottom: 20px;
+}
+main .team .personel .small-pic-personel .doctor3{
+    grid-area: doctor3;
+}
+main .team .personel .small-pic-personel .doctor4{
+    grid-area:doctor4;
+    margin-bottom: 20px;
+}
+
+
+main .team .personel .carusel{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /*margin-right:20px;*/
+    
+}
+main .team .personel .carusel .container-arrows{
+    display: flex;
+    justify-content:space-around;
+}
+
+main .team .personel .carusel .container-arrows .professor img{
+    width:250px;
+    height:250px;
+    display:block;
+}
+
+main .team .personel .carusel .container-arrows .professor{
+    margin:0 20px;
+}
+
+main .team .personel .carusel .container-arrows .left-arrow, 
+.right-arrow{
+    align-self:center;
+}
+main .team .personel .carusel .personel-info{
+
+    align-self:center;
+}
