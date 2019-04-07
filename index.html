@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/main-pic.css">
+    <link rel="stylesheet" href="css/about.css">
 
     <title>Клініка Герда</title>
 </head>
@@ -65,54 +67,39 @@
 
     <main>
 
-        <!--<div>-->
-        <!--    <img src="img/main_picture.jpg" alt="main_picture">-->
-        <!--</div>-->
-        <!--<section id="about-us">-->
-        <!--    <div class="about-us">-->
-        <!--        <h2>Клініка "GERDA" надає широкий спектр ветеринарних послуг</h2>-->
-        <!--        <br>-->
-        <!--        <div class="surgery">-->
-        <!--            <img src="img/about_us/vet_serg.jpg" width="500" height="400" alt="surgery-picture">-->
-        <!--            <br>-->
-        <!--            <label>Хірургія </label>-->
-        <!--            <br>-->
-        <!--            <br>-->
-        <!--            <p>-->
-        <!--                Проведення рутинних операцій типу кастрація \ стерилізація, видалення новоутворень, а також внутрішньовенне введення ліків, обробка ран, зняття зубного каменю з послідуючим поліруванням зубів, видалення молочних зубів, оксигенотерапія та багато іншого.-->
-        <!--            </p>-->
-        <!--            <br>-->
-        <!--            <br>-->
-        <!--        </div>-->
-
-        <!--        <div class="labs">-->
-        <!--            <img src="img/about_us/research.jpg" width="500" height="400" alt="research-picture">-->
-        <!--            <br>-->
-        <!--            <br>-->
-        <!--            <label> Лабораторні дослідження   </label>-->
-        <!--            <br>-->
-        <!--            <br>-->
-        <!--            <p>-->
-        <!--                Проводимо гематологічний аналіз крові, біохімічний аналіз крові, експрес діагностика інфекцій, аналіз сечі, зіскоби шкіри, мазки з вушних раковин, цитологічні дослідження, бактеріологічний посів з антибіотикограмою, гістологічне дослідження.-->
-        <!--            </p>-->
-        <!--            <br>-->
-        <!--            <br>-->
-        <!--        </div>-->
-        <!--        <div class="terapy">-->
-        <!--            <img src="img/about_us/terapy.jpg" width="500" height="400" alt="terapy-picture">-->
-        <!--            <br>-->
-        <!--            <br>-->
-        <!--            <label>Терапія </label>-->
-        <!--            <br>-->
-        <!--            <br>-->
-        <!--            <p>-->
-        <!--                Проведення рутинних операцій типу кастрація \ стерилізація, видалення новоутворень, а також внутрішньовенне введення ліків, обробка ран, зняття зубного каменю з послідуючим поліруванням зубів, видалення молочних зубів, оксигенотерапія та багато іншого.-->
-        <!--            </p>-->
-        <!--            <br>-->
-        <!--            <br>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</section>-->
+        <div class="main-pic">
+            <img src="img/main_picture.jpg" alt="main-picture">
+        </div>
+        <section id="about-us">
+            <div class="about-us">
+                <div class="head">
+                    <h2>Клініка "GERDA" надає широкий спектр ветеринарних послуг</h2>
+                </div>
+                <div class="services">
+                    <div class="surgery">
+                        <img src="img/about_us/vet_serg.jpg"  alt="surgery-picture">
+                        <label>Хірургія</label>
+                        <p>
+                            Проведення рутинних операцій типу кастрація \ стерилізація, видалення новоутворень, а також внутрішньовенне введення ліків, обробка ран, зняття зубного каменю з послідуючим поліруванням зубів, видалення молочних зубів, оксигенотерапія та багато іншого.
+                        </p>
+                    </div>
+                    <div class="labs">
+                        <img src="img/about_us/research.jpg"  alt="research-picture">
+                        <label>Лабораторні дослідження</label>
+                        <p>
+                            Проводимо гематологічний аналіз крові, біохімічний аналіз крові, експрес діагностика інфекцій, аналіз сечі, зіскоби шкіри, мазки з вушних раковин, цитологічні дослідження, бактеріологічний посів з антибіотикограмою, гістологічне дослідження.
+                        </p>
+                    </div>
+                    <div class="terapy">
+                        <img src="img/about_us/terapy.jpg"  alt="terapy-picture">
+                        <label>Терапія</label>
+                        <p>
+                            Проведення рутинних операцій типу кастрація \ стерилізація, видалення новоутворень, а також внутрішньовенне введення ліків, обробка ран, зняття зубного каменю з послідуючим поліруванням зубів, видалення молочних зубів, оксигенотерапія та багато іншого.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--<section id="team">-->
         <!--    <div class=team>-->
@@ -181,36 +168,36 @@
                     </label>
                 </div>
                 <!--<div class="send-form">-->
-                    <form class="send-form" method="POST" action="https://formspree.io/yurikanunak@gmail.com">
+                <form class="send-form" method="POST" action="https://formspree.io/yurikanunak@gmail.com">
 
-                        <div class="name"> 
-                           <input type="text" name="name" placeholder="Ваше ім'я" required>
-                           <hr>
-                      </div>
+                    <div class="name">
+                        <input type="text" name="name" placeholder="Ваше ім'я" required>
+                        <hr>
+                    </div>
 
-                        <div class="topic"> 
-                             <input type="text" name="topic" placeholder="Тема повідомлення" required>
-                             <hr>
-                      </div>
+                    <div class="topic">
+                        <input type="text" name="topic" placeholder="Тема повідомлення" required>
+                        <hr>
+                    </div>
 
-                        <div class="e-mail"> 
-                             <input type="email" name="e-mail" placeholder="E-mail" required>
-                            <hr>
-                        </div>
+                    <div class="e-mail">
+                        <input type="email" name="e-mail" placeholder="E-mail" required>
+                        <hr>
+                    </div>
 
-                        <div class="client-phone"> 
-                             <input type="tel" name="client-phone" placeholder="Ваш номер телефону" required>
-                             <hr>
-                        </div>
+                    <div class="client-phone">
+                        <input type="tel" name="client-phone" placeholder="Ваш номер телефону" required>
+                        <hr>
+                    </div>
 
-                        <div class="message"> 
-                             <textarea name="message" placeholder="Повідомлення" required></textarea>
-                        </div>
-                        <div class="submit" >
-                            <input  type="submit" value="Залишити заявку" />
-                        </div>
-                    
-                    </form>
+                    <div class="message">
+                        <textarea name="message" placeholder="Повідомлення" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Залишити заявку" />
+                    </div>
+
+                </form>
                 <!--</div>-->
             </div>
         </section>
@@ -262,7 +249,7 @@
         </div>
     </footer>
 
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>

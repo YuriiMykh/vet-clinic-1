@@ -5,7 +5,6 @@ body {
     margin: auto;
     font-family: 'Merriweather';
    
-
     --main-color: white;
     --secondary-color: black;
 }
@@ -185,15 +184,15 @@ header nav .phone-number {
     }
 }
 
-@media (max-width: 320px) {
-    header h1 {
-        font-size: 20px;
-    }
+/*@media (max-width: 320px) {*/
+/*    header h1 {*/
+/*        font-size: 20px;*/
+/*    }*/
 
-    header nav label {
-        font-size: 13px;
-    }
-}
+/*    header nav label {*/
+/*        font-size: 13px;*/
+/*    }*/
+/*}*/
 
 @media (max-width: 340px) {
     

@@ -1,0 +1,17 @@
+main .main-pic{
+    /*display: block;*/
+    border-bottom-color: #ffffff;
+    border-bottom-style: solid;
+    display:flex;
+    align-items: center;
+}
+
+main .main-pic img{
+    display: block;
+    max-width:100%;
+    /*justify-content: center;*/
+    flex: 1;
+    
+}
+
+@media (max-width: 575px) {}

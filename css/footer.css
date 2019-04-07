@@ -2,7 +2,6 @@ footer {
     --main-color: white;
     --secondary-color: black;
     background-color: #72bb53;
-  
 
     border-bottom-color: #ffffff;
     border-bottom-style: solid;
@@ -89,8 +88,6 @@ footer .contacts .contact-info a {
 
    footer .contacts .location-map {
         grid-column: 1 / 4;
-        /*justify-self:stretch;*/
-        /*margin-left:100px;*/
         width: 75%;
         justify-item: center;
            /*align-content: center;*/
@@ -150,17 +147,6 @@ footer .contacts .contact-info a {
     footer .contacts .location-map {
             justify-item: center;
     }
-    
-    /*footer.contacts .location-map iframe {*/
-    /*   align-content: center;*/
-    /*        align-items: center;*/
-    /*        justify-content: center;*/
-    /*        justify-items: center;*/
-    /*        justify-self: center;*/
-    /*        align-item: center;*/
-    /*        justify-item: center;*/
-        
-    /*}*/
     
     footer .contacts .head,  
     footer .contacts .contact-info,

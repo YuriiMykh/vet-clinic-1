@@ -1,0 +1,148 @@
+
+
+
+main .about-us {
+    --main-color: black;
+    --secondary-color: white;
+    background-color: #f3edd2;
+    /*height:600px;*/
+    border-bottom-color: #ffffff;
+    border-bottom-style: solid;
+    
+}
+
+main .about-us {
+    display: flex;
+    flex-direction: column;
+    /*align-items: stretch;*/
+}
+
+
+main .about-us .head {
+    margin: 60px 0 20px 0;
+    text-align: center;
+    /*align-content:center;*/
+    /*align-items:center;*/
+    /*justify-content:center;*/
+    /*justify-items:center;*/
+    /*justify-self:center;*/
+    /*align-item:center;*/
+    /*ustify-item:center;*/
+}
+
+main .about-us .head h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+main .about-us .services{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin-bottom: 30px;
+}
+
+main .about-us .services img{
+    width:300px;
+    height:200px;
+    display:block;
+}
+
+main .about-us .services .surgery,
+main .about-us .services .labs,
+main .about-us .services .terapy
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    /*height:390px;*/
+    /*width: 30%;*/
+    height:auto;
+    /*border: 1px solid;*/
+    align-items:center;
+    margin: 30px 10px;
+    background-color: var(--secondary-color);
+   
+}
+
+main .about-us .services label{
+    font-size: 20px;
+    margin:15px 0;
+    font-weight: 600;
+}
+
+main .about-us .services p{
+    font-size: 14px;
+    width:90%;
+    margin-bottom: 20px;
+    
+}
+
+
+main .about-us .services .surgery{
+    /*margin-left: 10px;*/
+}
+
+
+@media (max-width: 561px) {
+    
+    main .about-us .services label{
+    font-size: 18px;
+    margin:15px 0;
+    font-weight: 600;
+}
+
+main .about-us .services p{
+    font-size: 13px;
+    width:90%;
+    margin-bottom: 20px;
+    
+}
+    main .about-us .head h2 {
+    font-size: 21px;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 450px) {
+    
+   main .about-us {
+    align-items:center;
+}
+  
+    main .about-us .head {
+    font-size: 19px;
+    text-align: center;
+    width:300px;
+}}
+
+
+@media (max-width: 350px) {
+    
+   
+    main .about-us .head h2 {
+    font-size: 19px;
+    text-align: center;
+}
+
+
+main .about-us .services{
+    /*display: block;*/
+    /*min-width:40%;*/
+    /*justify-content: center;*/
+    /*flex: 1;*/
+    flex-basis:10%;
+    
+}
+
+main .about-us .services .surgery,
+main .about-us .services .labs,
+main .about-us .services .terapy
+{
+    margin:30px 0;
+}
+
+    
+    
+}
