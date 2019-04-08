@@ -8,7 +8,7 @@ function submitForm(e) {
     e.preventDefault();
     fetch('form.php', {
         method: 'POST',
-        body: new FormData(document.querySelector('.doctors-consultation .send-form'))
+        body: new FormData(document.querySelector('.doctors-consultation form[class=send-form]'))
     })
     .then( response => response.text())
     .then( html => {   
