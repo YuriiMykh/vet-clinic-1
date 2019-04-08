@@ -2,11 +2,9 @@ main .doctors-consultation {
     --main-color: black;
     --secondary-color: white;
     background-color: #f3edd2;
-    /*height:600px;*/
     border-bottom-color: #ffffff;
     border-bottom-style: solid;
 }
-
 
 main .doctors-consultation {
     display: flex;
@@ -31,10 +29,8 @@ main .doctors-consultation .head h2 {
     text-align: center;
 }
 
-
 main .doctors-consultation .statement {
     align-self: flex-start;
-    /*margin-bottom: 10px;*/
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -44,7 +40,6 @@ main .doctors-consultation .statement label {
 }
 
 main .doctors-consultation .send-form {
-
     display: grid;
     /*grid-template-rows: repeat(4, auto);*/
     /*grid-template-columns: 1fr 1fr ;*/
@@ -104,9 +99,10 @@ textarea[name="message"] {
 }
 
 /*removing autocomplete blue background*/
+
 input:-webkit-autofill {
- -webkit-box-shadow: 0 0 0px 1000px white inset !important;
-  }
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
 
 input::placeholder,
 textarea::placeholder {
@@ -133,7 +129,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #92d36e;
+    background-color: #92d36e;
 }
 
 main .doctors-consultation .send-form>div {
@@ -257,7 +253,7 @@ hr {
     main .doctors-consultation .statement label {
         margin-left: 0px;
     }
-    
+
     input[placeholder],
     textarea[name="message"] {
         font-size: 14px;
