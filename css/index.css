@@ -28,7 +28,8 @@ header h1 {
 
 header {
     background-color: #72bb53;
-    max-height: 202px;
+    /*max-height: 202px;*/
+    
     border-bottom-color: #ffffff;
     border-bottom-style: solid;
 }
@@ -40,18 +41,25 @@ header .upper-icons {
 }
 
 header .upper-icons .main-upper-logo img {
-    width: 50px;
-    height: 50px;
+    /*width: 50px;*/
+    /*height: 50px;*/
+    display:block;
+    width:100%;
+}
+
+header .upper-icons .main-menu-logo img,
+header .upper-icons .main-menu-logo input {
+    display: block;
+    width:100%;
 }
 
 header .upper-icons .main-upper-logo {
-    display: block;
     margin-top: 20px;
     margin-left: 20px;
+    width:50px;
 }
 
 header .upper-icons .main-menu-logo {
-    display: block;
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -165,6 +173,19 @@ header nav .phone-number {
     header nav .skype-link {
         margin-left: 40px;
     }
+    
+    header h1 {
+        padding: 0 10px;
+         font-size: 30px;
+    }
+     header .upper-icons .main-upper-logo {
+        width:45px;
+    }
+    
+    header .upper-icons .main-menu-logo  {
+        width: 45px;
+    }
+    
 }
 
 @media (max-width: 561px) {
@@ -183,6 +204,15 @@ header nav .phone-number {
     header nav .phone-number {
         margin-right: 40px;
     }
+    
+    header .upper-icons .main-upper-logo {
+        width:40px;
+    }
+    
+    header .upper-icons .main-menu-logo  {
+        width: 40px;
+    }
+    
 }
 
 @media (max-width: 340px) {
@@ -191,19 +221,15 @@ header nav .phone-number {
         margin-left: 10px;
         justify-content: evenly;
     }
-
     header nav .skype-link {
         margin-left: 10px;
         margin-right: 10px;
     }
-
-    header .upper-icons .main-upper-logo img {
-        width: 40px;
-        height: 40px;
+    header .upper-icons .main-upper-logo {
+        width:30px;
     }
-
-    header .upper-icons .main-menu-logo img {
-        width: 40px;
-        height: 40px;
+    
+    header .upper-icons .main-menu-logo  {
+        width: 30px;
     }
 }

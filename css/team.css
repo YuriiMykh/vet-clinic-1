@@ -30,15 +30,12 @@ main .team .head {
 main .team {
     display: flex;
     flex-direction: column;
-
 }
 
-main .team .personel .container-arrows input {
+main .team .personel .carusel .container-arrows input,
+main .team .personel .carusel .container-arrows img {
     display: block;
-}
-
-main .team .personel .container-arrows img {
-    display: block;
+    width:100%;
 }
 
 main .team .personel {
@@ -50,8 +47,9 @@ main .team .personel {
 }
 
 [class^="doctor"]>img {
-    width: 80px;
-    height: 80px;
+    /*width: 80px;*/
+    /*height: 80px;*/
+    width: 100%;
     display: block;
 }
 
@@ -96,6 +94,7 @@ main .team .personel .small-pic-personel .doctor1 {
 main .team .personel .small-pic-personel .doctor2 {
     grid-area: doctor2;
     align-item: center;
+    border-color: #000000;
 }
 
 main .team .personel .small-pic-personel .doctor3 {
@@ -111,7 +110,7 @@ main .team .personel .small-pic-personel .doctor4 {
 }
 
 input[type="image"] {
-
+    
     animation-name: flash;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -157,8 +156,9 @@ main .team .personel .carusel .container-arrows .professor {
 }
 
 main .team .personel .carusel .container-arrows .left-arrow,
-.right-arrow {
+main .team .personel .carusel .container-arrows .right-arrow {
     align-self: center;
+    width: 48px;
 }
 
 main .team .personel .carusel .personel-info {
@@ -223,21 +223,19 @@ main .team .personel .carusel .personel-info h5 {
         height: 170px;
         display: block;
     }
-
-    main .team .personel .carusel .container-arrows .left-arrow input,
-    main .team .personel .carusel .container-arrows .right-arrow input {
-        /*width:50%;*/
-        /*height:70%;*/
-        margin: auto;
+    
+    main .team .personel .carusel .container-arrows .left-arrow,
+    main .team .personel .carusel .container-arrows .right-arrow {
+    width: 40px;
     }
-
+    
     main .team .personel .carusel .container-arrows .professor {
         margin: 0 10px;
     }
 
-    input[type="image"] {
-        width: 70%;
-    }
+    /*input[type="image"] {*/
+    /*    width: 70%;*/
+    /*}*/
 
     main .team .personel .carusel .personel-info h4 {
         font-size: 21px;
@@ -253,10 +251,7 @@ main .team .personel .carusel .personel-info h5 {
 }
 
 @media (max-width: 350px) {
-    main .team .personel .carusel .container-arrows .professor {
-        margin: 0 7px;
-    }
-
+   
     main .team .personel .carusel .container-arrows .professor img {
         width: 150px;
         height: 150px;
@@ -268,5 +263,10 @@ main .team .personel .carusel .personel-info h5 {
 
     main .team .personel .carusel .personel-info h5 {
         font-size: 14px;
+    }
+    
+    main .team .personel .carusel .container-arrows .left-arrow,
+    main .team .personel .carusel .container-arrows .right-arrow {
+    width: 32px;
     }
 }

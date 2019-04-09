@@ -5,7 +5,6 @@ main .about-us {
     /*height:600px;*/
     border-bottom-color: #ffffff;
     border-bottom-style: solid;
-
 }
 
 main .about-us {
@@ -23,6 +22,7 @@ main .about-us .head {
     /*justify-self:center;*/
     /*align-item:center;*/
     /*ustify-item:center;*/
+     padding: 0 40px ;
 }
 
 main .about-us .head h2 {
@@ -38,9 +38,10 @@ main .about-us .services {
 }
 
 main .about-us .services img {
-    width: 300px;
-    height: 200px;
+    /*width: 300px;*/
+    /*height: 200px;*/
     display: block;
+    width:100%;
 }
 
 main .about-us .services .surgery,
@@ -72,18 +73,14 @@ main .about-us .services p {
 
     main .about-us .services label {
         font-size: 18px;
-        margin: 15px 0;
-        font-weight: 600;
     }
 
     main .about-us .services p {
         font-size: 13px;
-        width: 90%;
-        margin-bottom: 20px;
+
     }
     main .about-us .head h2 {
         font-size: 21px;
-        text-align: center;
     }
 
 }
@@ -97,13 +94,8 @@ main .about-us .services p {
     main .about-us .head {
         font-size: 19px;
         text-align: center;
-        width: 300px;
-    }
-
-    main .about-us .services img {
-        width: 300px;
-        height: 200px;
-        display: block;
+        /*width: 300px;*/
+        
     }
 
     main .about-us .services .surgery,
@@ -111,7 +103,6 @@ main .about-us .services p {
     main .about-us .services .terapy {
         width: 300px;
     }
-
 }
 
 @media (max-width: 360px) {
@@ -127,10 +118,8 @@ main .about-us .services p {
         width: 260px;
     }
 
-    main .about-us .services img {
-        width: 260px;
-        height: 160px;
-        display: block;
+   main .about-us .head {
+        padding: 0 20px;
     }
 
     main .about-us .services label {
