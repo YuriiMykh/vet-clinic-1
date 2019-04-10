@@ -251,7 +251,7 @@ main .team .personel .carusel .personel-info h5 {
 }
 
 @media (max-width: 350px) {
-   
+
     main .team .personel .carusel .container-arrows .professor img {
         width: 150px;
         height: 150px;
@@ -264,9 +264,9 @@ main .team .personel .carusel .personel-info h5 {
     main .team .personel .carusel .personel-info h5 {
         font-size: 14px;
     }
-    
+
     main .team .personel .carusel .container-arrows .left-arrow,
     main .team .personel .carusel .container-arrows .right-arrow {
-    width: 32px;
+        width: 32px;
     }
 }
