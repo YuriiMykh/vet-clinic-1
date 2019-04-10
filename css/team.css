@@ -156,10 +156,16 @@ main .team .personel .carusel .container-arrows .professor {
 }
 
 main .team .personel .carusel .container-arrows .left-arrow,
-main .team .personel .carusel .container-arrows .right-arrow {
+main .team .personel .carusel .container-arrows .right-arrow{
     align-self: center;
     width: 48px;
+   
 }
+
+main .team .personel .carusel .container-arrows input{
+     outline: none;
+}
+
 
 main .team .personel .carusel .personel-info {
     align-self: center;
