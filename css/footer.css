@@ -91,7 +91,7 @@ footer .contacts .contact-info a {
     footer .contacts .location-map {
         grid-column: 1 / 4;
         width: 75%;
-        justify-item: center;
+        /*justify-item: center;*/
         /*align-content: center;*/
         /* align-items: center;*/
         /* justify-content: center;*/
@@ -149,10 +149,7 @@ footer .contacts .contact-info a {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto 0.7fr 0.7fr 1fr auto;
-    }
 
-    footer .contacts .location-map {
-        justify-item: center;
     }
 
     footer .contacts .head,

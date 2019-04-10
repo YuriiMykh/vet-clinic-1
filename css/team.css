@@ -35,7 +35,7 @@ main .team {
 main .team .personel .carusel .container-arrows input,
 main .team .personel .carusel .container-arrows img {
     display: block;
-    width:100%;
+    width: 100%;
 }
 
 main .team .personel {
@@ -94,7 +94,7 @@ main .team .personel .small-pic-personel .doctor1 {
 
 main .team .personel .small-pic-personel .doctor2 {
     grid-area: doctor2;
-    align-item: center;
+    align-self: center;
 }
 
 main .team .personel .small-pic-personel .doctor3 {
@@ -110,7 +110,7 @@ main .team .personel .small-pic-personel .doctor4 {
 }
 
 input[type="image"] {
-    
+
     animation-name: flash;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -223,12 +223,12 @@ main .team .personel .carusel .personel-info h5 {
         height: 170px;
         display: block;
     }
-    
+
     main .team .personel .carusel .container-arrows .left-arrow,
     main .team .personel .carusel .container-arrows .right-arrow {
-    width: 40px;
+        width: 40px;
     }
-    
+
     main .team .personel .carusel .container-arrows .professor {
         margin: 0 10px;
     }
@@ -236,7 +236,6 @@ main .team .personel .carusel .personel-info h5 {
     /*input[type="image"] {*/
     /*    width: 70%;*/
     /*}*/
-
     main .team .personel .carusel .personel-info h4 {
         font-size: 21px;
     }
