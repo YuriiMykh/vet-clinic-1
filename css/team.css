@@ -81,7 +81,7 @@ main .team .personel .small-pic-personel {
 }
 
 main .team .personel .small-pic-personel>div {
-    border: 1px solid #fff;
+    border: 1px solid #72bb53;
     border-radius: 50%;
     padding: 5px;
 }
@@ -89,12 +89,12 @@ main .team .personel .small-pic-personel>div {
 main .team .personel .small-pic-personel .doctor1 {
     grid-area: doctor1;
     align-self: center;
+    border-color: #fff;
 }
 
 main .team .personel .small-pic-personel .doctor2 {
     grid-area: doctor2;
     align-item: center;
-    border-color: #000000;
 }
 
 main .team .personel .small-pic-personel .doctor3 {

@@ -50,6 +50,7 @@ header .upper-icons .main-menu-logo img,
 header .upper-icons .main-menu-logo input {
     display: block;
     width: 100%;
+    outline: none;
 }
 
 header .upper-icons .main-upper-logo {
@@ -131,7 +132,7 @@ header nav .phone-number {
     margin-right: 200px;
 }
 
-/* style for toggling menu button*/
+/* style for toggling menu*/
 
 header .insert-menu {
     margin: 15px 0 1px 0;
