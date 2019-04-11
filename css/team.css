@@ -47,15 +47,14 @@ main .team .personel {
 }
 
 [class^="doctor"]>img {
-    /*width: 80px;*/
-    /*height: 80px;*/
     width: 100%;
     display: block;
 }
 
 main .team .personel-about-info {
-    width: 240px;
-    /*width:19%;*/
+
+    display: block;
+    width: 440px;
     margin-left: 25px;
     padding: 10px;
     align-self: center;
@@ -64,8 +63,8 @@ main .team .personel-about-info {
 main .team .personel .personel-about-info p {
     color: var(--main-color);
     font-size: 14px;
-    /*display:inline-block;*/
     box-sizing: border-box;
+    display: block;
 }
 
 main .team .personel .small-pic-personel {
@@ -76,7 +75,6 @@ main .team .personel .small-pic-personel {
     grid-template-areas: " doctor1 . " " . doctor2 " " . doctor3 " " doctor4 . ";
     grid-gap: 10px;
     margin: 0 60px 60px 30px;
-    /*align-items:center;*/
     justify-items: center;
 }
 
@@ -110,7 +108,6 @@ main .team .personel .small-pic-personel .doctor4 {
 }
 
 input[type="image"] {
-
     animation-name: flash;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -133,8 +130,10 @@ main .team .personel .carusel {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*margin-right:20px;*/
-    margin: auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 main .team .personel .carusel .container-arrows {
@@ -149,21 +148,19 @@ main .team .personel .carusel .container-arrows .professor img {
 
 main .team .personel .carusel .container-arrows .professor {
     margin: 0 20px;
-    /*margin: auto;*/
     border: 1px solid #fff;
     border-radius: 50%;
     padding: 10px;
 }
 
 main .team .personel .carusel .container-arrows .left-arrow,
-main .team .personel .carusel .container-arrows .right-arrow{
+main .team .personel .carusel .container-arrows .right-arrow {
     align-self: center;
     width: 48px;
-   
 }
 
-main .team .personel .carusel .container-arrows input{
-     outline: none;
+main .team .personel .carusel .container-arrows input {
+    outline: none;
 }
 
 
@@ -184,6 +181,56 @@ main .team .personel .carusel .personel-info h5 {
     text-align: center;
 }
 
+/* bootstarp caruseling*/
+.carusel1 .carousel-inner {
+    /*border: 1px solid #fff;*/
+    /*border-radius: 50%;*/
+    /*padding: 10px;*/
+    /*width: ;*/
+}
+
+.carusel1 .carousel {
+    margin-left: 100px;
+}
+
+.carusel1 .carousel .carousel-inner .carousel-item .carousel-caption {
+    position: initial;
+    display: block;
+}
+
+.carusel1 .carousel {
+    height: 500px;
+    width: 500px;
+    /*height: auto;*/
+}
+
+.carusel1 .carousel .carousel-inner .carousel-item .carousel-caption h4 {
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.carusel1 .carousel .carousel-inner .carousel-item .carousel-caption p {
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.carusel1 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.carusel1 .carousel .carousel-inner .carousel-item img {
+    /*width: 100%;*/
+    height: 250px;
+    width: 250px;
+    /*height:50%;*/
+    display: block;
+    /*margin-left: 120px;*/
+    margin: auto;
+}
+
+
 @media (max-width: 920px) {
     main .team .personel-about-info {
         align-self: flex-end;
@@ -200,7 +247,7 @@ main .team .personel .carusel .personel-info h5 {
     }
 
     main .team .personel {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     main .team .personel .small-pic-personel {
@@ -217,6 +264,10 @@ main .team .personel .carusel .personel-info h5 {
     main .team .personel .carusel {
         margin: auto;
     }
+
+    .carusel1 .carousel {
+        margin-left: 10px;
+    }
 }
 
 @media (max-width: 691px) {
@@ -224,6 +275,20 @@ main .team .personel .carusel .personel-info h5 {
         font-size: 25px;
     }
 
+    .carusel1 .carousel {
+        /*height: 500px;*/
+        width: 500px;
+        height: 430px;
+    }
+
+    .carusel1 .carousel .carousel-inner .carousel-item img {
+        /*width: 100%;*/
+        height: 170px;
+        width: 170px;
+        /*height:50%;*/
+        display: block;
+
+    }
     main .team .personel .carusel .container-arrows .professor img {
         width: 170px;
         height: 170px;
@@ -239,9 +304,6 @@ main .team .personel .carusel .personel-info h5 {
         margin: 0 10px;
     }
 
-    /*input[type="image"] {*/
-    /*    width: 70%;*/
-    /*}*/
     main .team .personel .carusel .personel-info h4 {
         font-size: 21px;
     }
@@ -253,7 +315,42 @@ main .team .personel .carusel .personel-info h5 {
     main .team .personel .carusel .personel-info {
         margin: auto;
     }
+
+    .carusel1 .carousel .carousel-inner .carousel-item .carousel-caption h4 {
+        /*margin:30px 0 30px 0;*/
+        font-size: 20px;
+    }
+
+    .carusel1 .carousel .carousel-inner .carousel-item .carousel-caption p {
+        /*margin-bottom: 20px;*/
+        font-size: 16px;
+
+    }
+
+    .carusel1 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+        /*margin:30px 0 30px 0;*/
+        font-size: 18px;
+    }
 }
+
+@media (max-width: 561px) {
+    .carusel1 .carousel .carousel-inner .carousel-item .carousel-caption p {
+        display: none;
+    }
+
+    .carusel1 .carousel {
+        width: 400px;
+        height: auto;
+    }
+
+    .carousel-control-prev {
+        margin-left: 50px;
+    }
+    .carousel-control-next {
+        margin-right: 50px;
+    }
+}
+
 
 @media (max-width: 350px) {
 
@@ -273,5 +370,30 @@ main .team .personel .carusel .personel-info h5 {
     main .team .personel .carusel .container-arrows .left-arrow,
     main .team .personel .carusel .container-arrows .right-arrow {
         width: 32px;
+    }
+
+    .carusel1 .carousel .carousel-inner .carousel-item .carousel-caption h4 {
+        font-size: 18px;
+    }
+
+    .carusel1 .carousel .carousel-inner .carousel-item .carousel-caption p {
+        /*margin-bottom: 20px;*/
+        font-size: 14px;
+    }
+
+    .carusel1 .carousel .carousel-inner .carousel-item .carousel-caption h5 {
+        /*margin:30px 0 30px 0;*/
+        font-size: 16px;
+    }
+
+    .carusel1 .carousel .carousel-inner .carousel-item img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .carusel1 .carousel {
+        /*height: 500px;*/
+        width: 350px;
+        height: auto;
     }
 }
