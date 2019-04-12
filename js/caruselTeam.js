@@ -1,3 +1,4 @@
+
 const doctors = document.querySelectorAll('main .team .personel .small-pic-personel>div');
 doctors.forEach(doctor => doctor.addEventListener('click', doctorPicPressed));
 const arrayDoctors = Array.from(doctors);
@@ -39,31 +40,23 @@ showSlides(slideIndex);
 function doctorPicPressed(e) {
     e.preventDefault();
     let previousEl = document.querySelector('main .team .personel .small-pic-personel .doctor.active img');
-    // console.log(e.target.parentNode.className);
-    console.log("index " + slideIndex);
+ 
     if (previousEl !== e.target) {
-        // console.log( "previousEl !== e.target");
-        // console.log( "previousEl " + previousEl.parentNode.className );
-
+       
         //finding index
         const strArr = e.target.parentNode.className.split(" ");
         //last char in strArr
         slideIndex = parseInt(strArr[1].charAt(strArr[1].length - 1));
-
-        console.log(strArr);
-        console.log(strArr[1].charAt(strArr[1].length - 1));
-
         e.target.parentNode.className += " active";
+        
         //removing word 'active' from classname
         previousEl.parentNode.className = previousEl.parentNode.className.replace(" active", "");
-        console.log("doctorPicPressed(e) index " + slideIndex);
         showSlides(slideIndex);
     }
 }
 
 function btnClicked(n) {
     // e.preventDefault();
-    console.log('left button clicked');
     showSlides(slideIndex += n);
 }
 
@@ -79,11 +72,6 @@ function showSlides(n) {
     const doctors = document.querySelectorAll('main .team .personel .carusel .container-arrows .doc');
     const text = document.querySelectorAll('main .team .personel .carusel .personel-about-info');
     const smallPicDoctors = document.querySelectorAll('main .team .personel .small-pic-personel .doctor');
-    console.log("showSlides() index " + n);
-    //   console.log(smallPicDoctors)
-    //  console.log(smallPicDoctors.length);
-    //   console.log(doctors.length);
-    //   console.log(doctors);
 
     if (n > doctors.length) {
         slideIndex = 1;
@@ -102,7 +90,8 @@ function showSlides(n) {
     doctors[slideIndex - 1].className += " active";
     text[slideIndex - 1].className += " active";
     smallPicDoctors[slideIndex - 1].className += " active";
-    
-    //setTimeout(showSlides, 2000, );
-    
 }
+
+
+
+ 

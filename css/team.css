@@ -271,7 +271,6 @@ main .team .personel .small-pic-personel .doctor.active {
     /*    align-self: flex-end;*/
     /*    display: none;*/
     /*}*/
-
     main .team .head {
         padding-left: 0px;
         text-align: center;
@@ -329,7 +328,7 @@ main .team .personel .small-pic-personel .doctor.active {
         display: block;
 
     }
-    
+
 
     /* example from w3schools carusel */
     main .team .personel .carusel .container-arrows .doc img {
