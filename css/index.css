@@ -2,10 +2,12 @@
 
 body {
     max-width: 980px;
+    /*min-width: 300px;*/
     margin: auto;
     font-family: 'Merriweather';
     --main-color: white;
     --secondary-color: black;
+    overflow-x: hidden;
 
 }
 
