@@ -1,159 +1,108 @@
-
-
-
 const doctors = document.querySelectorAll('main .team .personel .small-pic-personel>div');
 doctors.forEach(doctor => doctor.addEventListener('click', doctorPicPressed));
 const arrayDoctors = Array.from(doctors);
-
-const leftBtn = document.querySelector('main .team .personel .carusel .container-arrows .left-arrow');
-const rightBtn = document.querySelector('main .team .personel .carusel .container-arrows .right-arrow');
-
-leftBtn.addEventListener('click', leftBtnClicked);
-rightBtn.addEventListener('click', rightBtnClicked);
-
-
-let arrPersonel1 = [];
-function convertingDatatoArr(data) {
-    data.forEach(el => arrPersonel1.push(el));
-}
-//console.log(arrPersonel1[2].image);    
-let arr = [];
-fetch('doctors.json')
-    .then(response => response.json())
-    .then(data => convertingDatatoArr(data));
-
-
-// console.log(arrPersonel);
-// console.log(arrPersonel[3].name);
-
 
 let arrPersonel = [{
         "id": "doctor1",
         "name": "Орест Калина",
         "title": "Головний лікар",
         "image": "img/team/orest_kalyna_circle.png",
-        "description": "Засновник клініки. Професор. Закінчив Львівський державний університет ветеринарної медицини. Лікарську практику почав в 1972 році. Учасник багатьох міжнародних конференцій.",
-        "className": 499.99
+        "description": "Засновник клініки. Професор. Закінчив Львівський державний університет ветеринарної медицини. Лікарську практику почав в 1972 році. Учасник багатьох міжнародних конференцій."
     },
     {
         "id": "doctor2",
         "name": "Інга Калина",
         "title": "Медсестра",
-        "image": "img/team/inga_kalyna_cirlcle.png",
-        "description": "Дочка Ореста Калини. Закінчила Львівський державний університет ветеринарної медицини. Стажувалася в Польщі та Румунії. Практикує з 2007 року.",
-        "className": 499.99
+        "image": "img/team/inga_kalyna_circle.png",
+        "description": "Дочка Ореста Калини. Закінчила Львівський державний університет ветеринарної медицини. Стажувалася в Польщі та Румунії. Практикує з 2007 року."
     },
     {
         "id": "doctor3",
         "name": "Андрій Калина",
         "title": "Хірург",
         "image": "img/team/andrii_kalyna_circle.png",
-        "description": "Син Ореста Калини. Закінчилв Львівський державний університет ветеринарної медицини. Стажувався в Польщі та Англії. Практикує з 2002 року. Має двох котів.",
-        "className": 499.99
+        "description": "Син Ореста Калини. Закінчилв Львівський державний університет ветеринарної медицини. Стажувався в Польщі та Англії. Практикує з 2002 року. Має двох котів."
     },
     {
         "id": "doctor4",
         "name": "Павло Калина",
         "title": "Терапевт",
         "image": "img/team/pavlo_kalyna_circle.png",
-        "description": "Син Ореста Калини. Закінчив Львівський державний університет ветеринарної медицини. Стажувався в США та Німеччині. Практикує з 2005 року.",
-        "className": 499.99
+        "description": "Син Ореста Калини. Закінчив Львівський державний університет ветеринарної медицини. Стажувався в США та Німеччині. Практикує з 2005 року."
     }
 ];
-// let k ='' ;
-// let i = '';
-//  fetch('doctors.json')
-//     .then( response => response.json())
-//         // .then(arrPersonel => JSON.parse(this.response));
-//     .then( data => { 
-
-//          data.forEach(el => arrPersonel.push(el));
-
-
-//         // });
-//         // //return arrPersonel;
-//          }
-//         );
-
-// console.log('after');
-
-// console.log(arrPersonel.length);
-// console.log(arrPersonel);
-// //console.log(arrPersonel[0].id);
-
-// console.log(Array.from(arrPersonel));
-// console.log(arrPersonel[3].name);
-// console.log(doctors);
-
 
 // starting element
-let previousEl = document.querySelector('main .team .personel .small-pic-personel .doctor1 img');
-//elements for caruseling
-let picture = document.querySelector('main .team .personel .carusel .container-arrows .professor img');
-let name = document.querySelector('main .team .personel .carusel .personel-info h4');
-let specialty = document.querySelector('main .team .personel .carusel .personel-info h5');
-let text = document.querySelector('main .team .personel .personel-about-info p');
+let slideIndex = 1;
+showSlides(slideIndex);
+
 function doctorPicPressed(e) {
     e.preventDefault();
-
-    console.log(e.target.parentNode.className);
-
+    let previousEl = document.querySelector('main .team .personel .small-pic-personel .doctor.active img');
+    // console.log(e.target.parentNode.className);
+    console.log("index " + slideIndex);
     if (previousEl !== e.target) {
-        
-        for (let i = 0; i < arrPersonel.length; i++) {
-            console.log('id '+arrPersonel[i].id)
-            console.log(e.target.parentNode.className);
-            if( arrPersonel[i].id == e.target.parentNode.className){
-                console.log('Equal!');
-                 picture.src = arrPersonel[i].image;
-                 name.innerHTML = arrPersonel[i].name;
-                 specialty.innerHTML = arrPersonel[i].title;
-                 text.innerHTML = arrPersonel[i].description;
-                 break;
-            }
-           
-        }
+        // console.log( "previousEl !== e.target");
+        // console.log( "previousEl " + previousEl.parentNode.className );
 
-        e.target.parentNode.style.borderColor = '#ffffff';
-        previousEl.parentNode.style.borderColor = '#72bb53';
-        previousEl = e.target;
+        //finding index
+        const strArr = e.target.parentNode.className.split(" ");
+        //last char in strArr
+        slideIndex = parseInt(strArr[1].charAt(strArr[1].length - 1));
 
+        console.log(strArr);
+        console.log(strArr[1].charAt(strArr[1].length - 1));
+
+        e.target.parentNode.className += " active";
+        //removing word 'active' from classname
+        previousEl.parentNode.className = previousEl.parentNode.className.replace(" active", "");
+        console.log("doctorPicPressed(e) index " + slideIndex);
+        showSlides(slideIndex);
     }
 }
-    // switch(e.target.parentNode.className){
 
-    //     case 'doctor1': {
-    //         e.target.parentNode.style.borderColor = '#ffffff';
-    //         previousEl.parentNode.style.borderColor = '#72bb53';
-    //         break;}
-    //     case 'doctor2': {
-    //         //alert(e.target.parentNode.className + ' clicked')
-    //         break;}
-
-    //     case 'doctor3': {
-    //         //alert(e.target.parentNode.className + ' clicked')
-    //         break;}
-    //     case 'doctor4': {
-    //         //alert(e.target.parentNode.className + ' clicked')
-    //         break;}    
-    //         // style.border-color = " #fff";
-
-    // }
-    //previousEl = e.target;
-
-
-
-
-function leftBtnClicked(e) {
-    e.preventDefault();
+function btnClicked(n) {
+    // e.preventDefault();
     console.log('left button clicked');
-
-
+    showSlides(slideIndex += n);
 }
 
-function rightBtnClicked(e) {
-    e.preventDefault();
-    console.log('right button clicked');
+
+//Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
 
+function showSlides(n) {
+
+    const doctors = document.querySelectorAll('main .team .personel .carusel .container-arrows .doc');
+    const text = document.querySelectorAll('main .team .personel .carusel .personel-about-info');
+    const smallPicDoctors = document.querySelectorAll('main .team .personel .small-pic-personel .doctor');
+    console.log("showSlides() index " + n);
+    //   console.log(smallPicDoctors)
+    //  console.log(smallPicDoctors.length);
+    //   console.log(doctors.length);
+    //   console.log(doctors);
+
+    if (n > doctors.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = doctors.length;
+    }
+
+    for (let i = 0; i < doctors.length; i++) {
+        //removing " active" from element className
+        doctors[i].className = "doc";
+        text[i].className = "personel-about-info";
+        smallPicDoctors[i].className = "doctor doctor" + (i + 1);
+    }
+    //adding " active" to element className
+    doctors[slideIndex - 1].className += " active";
+    text[slideIndex - 1].className += " active";
+    smallPicDoctors[slideIndex - 1].className += " active";
+    
+    //setTimeout(showSlides, 2000, );
+    
 }
